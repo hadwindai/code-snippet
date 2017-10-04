@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<start>
+	<config name="配置1111">
+		<create file="${path}\${number}\${number}_D2.prt" template="${template}" />
+		<create file="${path}\${number}\${number}_D3.prt" />
+		<create file="${path}\${number}\${number}_D4.prt" />
+		<assemble file="${path}\${number}\${number}_D2.prt">
+			<child file="${path}\${number}\${number}_D3.prt" />
+			<child file="${path}\${number}\${number}_D4.prt" />
+		</assemble>
+		<import file="${path}\${number}\${number}_D2.prt">
+			<child file="${path}\${number}\${number}_D3.prt" />
+			<child file="${path}\${number}\${number}_D4.prt" />
+		</import>
+		<open file="${path}\${number}\${number}_D2.prt" />
+	</config>
+	<config name="配置233" path="D:\part" number="DTS12_73833222222" template="D:\part\DTS12_21839_D1.prt">
+		<create file="${path}\${number}_D2.prt" />
+		<assemble file="${path}\${number}\${number}_D2.prt">
+			<child file="${path}\${number}\${number}_D3.prt" />
+			<child file="${path}\${number}\${number}_D4.prt" />
+		</assemble>
+		<import file="${path}\${number}\${number}_D2.prt">
+			<child file="${path}\${number}\${number}_D3.prt" />
+			<child file="${path}\${number}\${number}_D4.prt" />
+		</import>
+		<open file="${path}\${number}\${number}_D2.prt" />
+	</config>
+	<config name="配置3" path="D:\part" number="DTS12_7383333333" template="D:\part\DTS12_21839_D1.prt">
+		<create file="${path}\${number}\${number}_D2.prt" />
+		<create file="${path}\${number}\${number}_D3.prt" />
+		<create file="${path}\${number}\${number}_D4.prt" />
+		<assemble file="${path}\${number}\${number}_D2.prt">
+			<child file="${path}\${number}\${number}_D3.prt" />
+			<child file="${path}\${number}\${number}_D4.prt" />
+		</assemble>
+		<import file="${path}\${number}\${number}_D2.prt">
+			<child file="${path}\${number}\${number}_D3.prt" />
+			<child file="${path}\${number}\${number}_D4.prt" />
+		</import>
+		<open file="${path}\${number}\${number}_D3.prt" />
+	</config>
+</start>
